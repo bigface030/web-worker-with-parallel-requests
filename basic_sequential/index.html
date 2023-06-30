@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>web worker - sequential</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <button id="btn">postMessage</button>
+    <script src="../worker.js"></script>
+    <script src="index.js"></script>
+    <script>
+        const button = document.querySelector("#btn");
+        button.onclick = handleButtonClick;
+    </script>
+  </body>
+</html>
